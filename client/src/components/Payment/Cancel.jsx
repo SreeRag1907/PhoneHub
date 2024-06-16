@@ -11,7 +11,7 @@ const PaymentFailure = () => {
 
   return (
     <div className="bg-gray-100 h-screen flex items-center justify-center">
-      <div className="bg-white p-6 md:p-12 mx-auto max-w-md rounded-lg shadow-md">
+      <div className="bg-white mt-20 p-6 md:p-12 mx-auto max-w-md rounded-lg shadow-md">
         <motion.svg
           initial={{ opacity: 0, scale: 0.2, rotate: 0 }}
           animate={{ opacity: 1, scale: 1, rotate: 360 }}
