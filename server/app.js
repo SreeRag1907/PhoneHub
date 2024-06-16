@@ -36,7 +36,7 @@ app.post("/api/create-checkout-session", async (req, res) => {
             line_items: lineItems,
             mode: "payment",
             success_url: "https://phone-dngsb40k0-sreerag1907s-projects.vercel.app/success",
-            cancel_url: "https://phone-hub-ivory.vercel.app/cancel",
+            cancel_url: "https://phone-dngsb40k0-sreerag1907s-projects.vercel.app/cancel",
         });
 
         res.json({ id: session.id });
