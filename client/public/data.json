@@ -1,0 +1,1281 @@
+{
+
+  "phones": [
+    {
+      "brand": "Samsung",
+      "model": "Galaxy S24 Ultra",
+      "price": "$1,499",
+      "release_date": "2024-01-15",
+      "features": {
+        "display": "6.8 inches, Dynamic AMOLED 4X",
+        "processor": "Exynos 9001",
+        "ram": "16 GB",
+        "storage": "512 GB",
+        "battery": "6000 mAh"
+      },
+      "images": [
+        "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s24-ultra-5g-sm-s928-stylus.jpg"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy Z Fold 5",
+      "price": "$1,799",
+      "release_date": "2024-02-20",
+      "features": {
+        "display": "7.6 inches, Foldable Dynamic AMOLED",
+        "processor": "Exynos 9001",
+        "ram": "12 GB",
+        "storage": "256 GB",
+        "battery": "4500 mAh"
+      },
+      "images": [
+        "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-z-fold5-5g.jpg"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy S24",
+      "price": "$1,099",
+      "release_date": "2024-01-15",
+      "features": {
+        "display": "6.1 inches, Dynamic AMOLED 4X",
+        "processor": "Exynos 9001",
+        "ram": "8 GB",
+        "storage": "128 GB",
+        "battery": "4500 mAh"
+      },
+      "images": [
+        "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s24-5g-sm-s921.jpg"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy A74",
+      "price": "$699",
+      "release_date": "2023-12-10",
+      "features": {
+        "display": "6.5 inches, Super AMOLED",
+        "processor": "Snapdragon 778G",
+        "ram": "8 GB",
+        "storage": "128 GB",
+        "battery": "5000 mAh"
+      },
+      "images": [
+        "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-c55.jpg"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy Note 23",
+      "price": "$1,299",
+      "release_date": "2024-03-05",
+      "features": {
+        "display": "6.7 inches, Super AMOLED",
+        "processor": "Exynos 9001",
+        "ram": "12 GB",
+        "storage": "256 GB",
+        "battery": "5000 mAh"
+      },
+      "images": [
+        "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-note20-5g-r.jpg"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy S23 FE",
+      "price": "$799",
+      "release_date": "2023-11-20",
+      "features": {
+        "display": "6.4 inches, Dynamic AMOLED",
+        "processor": "Snapdragon 888",
+        "ram": "8 GB",
+        "storage": "128 GB",
+        "battery": "4500 mAh"
+      },
+      "images": [
+        "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-s23-fe.jpg"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy M54",
+      "price": "$499",
+      "release_date": "2023-10-15",
+      "features": {
+        "display": "6.7 inches, Super AMOLED",
+        "processor": "Exynos 1280",
+        "ram": "6 GB",
+        "storage": "128 GB",
+        "battery": "6000 mAh"
+      },
+      "images": [
+        "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-m54-5g.jpg"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy F54",
+      "price": "$549",
+      "release_date": "2024-02-28",
+      "features": {
+        "display": "6.6 inches, Super AMOLED",
+        "processor": "Snapdragon 750G",
+        "ram": "8 GB",
+        "storage": "128 GB",
+        "battery": "7000 mAh"
+      },
+      "images": [
+        "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-f54-5g.jpg"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy A54 5G",
+      "price": "$599",
+      "release_date": "2023-11-10",
+      "features": {
+        "display": "6.5 inches, Super AMOLED",
+        "processor": "Snapdragon 765G",
+        "ram": "6 GB",
+        "storage": "128 GB",
+        "battery": "4500 mAh"
+      },
+      "images": [
+        "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-a54.jpg"
+      ]
+    },
+    {
+      "brand": "Samsung",
+      "model": "Galaxy Z Flip 5",
+      "price": "$1,299",
+      "release_date": "2024-03-10",
+      "features": {
+        "display": "6.7 inches, Foldable Dynamic AMOLED",
+        "processor": "Exynos 9001",
+        "ram": "8 GB",
+        "storage": "256 GB",
+        "battery": "3700 mAh"
+      },
+      "images": [
+        "https://fdn2.gsmarena.com/vv/bigpic/samsung-galaxy-z-flip5-5g.jpg"
+      ]
+    },
+    {
+      "brand": "OnePlus",
+      "model": "OnePlus 12 Pro",
+      "price": "$999",
+      "release_date": "2024-01-20",
+      "features": {
+        "display": "6.7 inches, Fluid AMOLED",
+        "processor": "Snapdragon 8 Gen 2",
+        "ram": "12 GB",
+        "storage": "256 GB",
+        "battery": "5000 mAh"
+      },
+      "images": [
+        "https://fdn2.gsmarena.com/vv/bigpic/oneplus-12.jpg"
+      ]
+    },
+    {
+      "brand": "OnePlus",
+      "model": "OnePlus 12",
+      "price": "$799",
+      "release_date": "2024-01-20",
+      "features": {
+        "display": "6.5 inches, Fluid AMOLED",
+        "processor": "Snapdragon 8 Gen 2",
+        "ram": "8 GB",
+        "storage": "128 GB",
+        "battery": "4500 mAh"
+      },
+      "images": [
+        "https://fdn2.gsmarena.com/vv/bigpic/oneplus-12.jpg"
+
+      ]
+    },
+    {
+      "brand": "OnePlus",
+      "model": "OnePlus Nord 4",
+      "price": "$499",
+      "release_date": "2023-12-05",
+      "features": {
+        "display": "6.4 inches, Fluid AMOLED",
+        "processor": "Snapdragon 778G",
+        "ram": "8 GB",
+        "storage": "128 GB",
+        "battery": "4500 mAh"
+      },
+      "images": [
+        "https://fdn2.gsmarena.com/vv/bigpic/oneplus-nord.jpg"
+      ]
+    },
+    {
+      "brand": "OnePlus",
+      "model": "OnePlus 12R",
+      "price": "$649",
+      "release_date": "2024-01-25",
+      "features": {
+        "display": "6.7 inches, Fluid AMOLED",
+        "processor": "Snapdragon 8 Gen 1",
+        "ram": "8 GB",
+        "storage": "128 GB",
+        "battery": "5000 mAh"
+      },
+      "images": [
+        "https://fdn2.gsmarena.com/vv/bigpic/oneplus-12r-new.jpg"
+      ]
+    },
+    {
+      "brand": "OnePlus",
+      "model": "OnePlus 11T",
+      "price": "$749",
+      "release_date": "2023-11-20",
+      "features": {
+        "display": "6.55 inches, Fluid AMOLED",
+        "processor": "Snapdragon 870",
+        "ram": "8 GB",
+        "storage": "128 GB",
+        "battery": "4500 mAh"
+      },
+      "images": [
+        "https://fdn2.gsmarena.com/vv/bigpic/oneplus-11.jpg"
+      ]
+    },
+    {
+      "brand": "OnePlus",
+      "model": "OnePlus 11 Pro",
+      "price": "$899",
+      "release_date": "2023-12-15",
+      "features": {
+        "display": "6.7 inches, Fluid AMOLED",
+        "processor": "Snapdragon 8 Gen 1",
+        "ram": "12 GB",
+        "storage": "256 GB",
+        "battery": "5000 mAh"
+      },
+      "images": [
+        "https://fdn2.gsmarena.com/vv/bigpic/oneplus-11.jpg"
+      ]
+    },
+    {
+      "brand": "OnePlus",
+      "model": "OnePlus Nord CE 3",
+      "price": "$399",
+      "release_date": "2023-10-10",
+      "features": {
+        "display": "6.43 inches, Fluid AMOLED",
+        "processor": "Snapdragon 750G",
+        "ram": "6 GB",
+        "storage": "128 GB",
+        "battery": "4500 mAh"
+      },
+      "images": [
+        "https://fdn2.gsmarena.com/vv/bigpic/oneplus-nord-ce3-5g.jpg"
+      ]
+    },
+    {
+      "brand": "OnePlus",
+      "model": "OnePlus Nord N300",
+      "price": "$349",
+      "release_date": "2023-11-05",
+      "features": {
+        "display": "6.49 inches, IPS LCD",
+        "processor": "MediaTek Dimensity 700",
+        "ram": "4 GB",
+        "storage": "64 GB",
+        "battery": "5000 mAh"
+      },
+      "images": [
+        "https://fdn2.gsmarena.com/vv/bigpic/oneplus-nord-n300-5g.jpg"
+      ]
+    },
+    {
+      "brand": "OnePlus",
+      "model": "OnePlus 12T",
+      "price": "$799",
+      "release_date": "2024-01-10",
+      "features": {
+        "display": "6.7 inches, Fluid AMOLED",
+        "processor": "Snapdragon 8 Gen 2",
+        "ram": "12 GB",
+        "storage": "256 GB",
+        "battery": "5000 mAh"
+      },
+      "images": [
+        "https://fdn2.gsmarena.com/vv/bigpic/oneplus-12.jpg"
+      ]
+    },
+    {
+      "brand": "OnePlus",
+      "model": "OnePlus Nord 3 5G",
+      "price": "$599",
+      "release_date": "2023-12-01",
+      "features": {
+        "display": "6.44 inches, Fluid AMOLED",
+        "processor": "Snapdragon 765G",
+        "ram": "8 GB",
+        "storage": "128 GB",
+        "battery": "4115 mAh"
+      },
+      "images": [
+        "https://fdn2.gsmarena.com/vv/bigpic/oneplus-nord-3r.jpg"
+      ]
+    },
+    {
+      "brand": "POCO",
+      "model": "POCO X5 Pro",
+      "price": "$349",
+      "release_date": "2023-11-30",
+      "features": {
+        "display": "6.67 inches, Super AMOLED",
+        "processor": "Snapdragon 860",
+        "ram": "8 GB",
+        "storage": "128 GB",
+        "battery": "5160 mAh"
+      },
+      "images": [
+        "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-poco-x5-pro-5g.jpg"
+      ]
+    },
+    {
+      "brand": "POCO",
+      "model": "POCO F5",
+      "price": "$399",
+      "release_date": "2024-02-15",
+      "features": {
+        "display": "6.67 inches, Super AMOLED",
+        "processor": "Snapdragon 870",
+        "ram": "8 GB",
+        "storage": "128 GB",
+        "battery": "4520 mAh"
+      },
+      "images": [
+        "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-poco-f5-2.jpg"
+      ]
+    },
+    {
+      "brand": "POCO",
+      "model": "POCO M5",
+      "price": "$299",
+      "release_date": "2023-12-10",
+      "features": {
+        "display": "6.53 inches, IPS LCD",
+        "processor": "MediaTek Helio G95",
+        "ram": "6 GB",
+        "storage": "128 GB",
+        "battery": "6000 mAh"
+      },
+      "images": [
+        "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-poco-m5.jpg"
+      ]
+    },
+    {
+      "brand": "POCO",
+      "model": "POCO X5",
+      "price": "$329",
+      "release_date": "2024-01-25",
+      "features": {
+        "display": "6.67 inches, Super AMOLED",
+        "processor": "Snapdragon 732G",
+        "ram": "6 GB",
+        "storage": "128 GB",
+        "battery": "5160 mAh"
+      },
+      "images": [
+        "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-poco-x5-5g.jpg"
+      ]
+    },
+    {
+      "brand": "POCO",
+      "model": "POCO M4 Pro",
+      "price": "$279",
+      "release_date": "2023-11-10",
+      "features": {
+        "display": "6.43 inches, AMOLED",
+        "processor": "MediaTek Dimensity 810",
+        "ram": "6 GB",
+        "storage": "128 GB",
+        "battery": "5000 mAh"
+      },
+      "images": [
+        "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-poco-m4-pro.jpg"
+      ]
+    },
+    {
+      "brand": "POCO",
+      "model": "POCO F4 GT",
+      "price": "$599",
+      "release_date": "2023-12-20",
+      "features": {
+        "display": "6.67 inches, AMOLED",
+        "processor": "Snapdragon 888",
+        "ram": "12 GB",
+        "storage": "256 GB",
+        "battery": "4700 mAh"
+      },
+      "images": [
+        "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-poco-f4-gt.jpg"
+      ]
+    },
+    {
+      "brand": "POCO",
+      "model": "POCO X4 Pro",
+      "price": "$329",
+      "release_date": "2024-01-05",
+      "features": {
+        "display": "6.67 inches, Super AMOLED",
+        "processor": "Snapdragon 732G",
+        "ram": "8 GB",
+        "storage": "128 GB",
+        "battery": "5160 mAh"
+      },
+      "images": [
+        "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-poco-x4-pro.jpg"
+      ]
+    },
+    {
+      "brand": "POCO",
+      "model": "POCO M3",
+      "price": "$229",
+      "release_date": "2023-10-30",
+      "features": {
+        "display": "6.53 inches, IPS LCD",
+        "processor": "Snapdragon 662",
+        "ram": "4 GB",
+        "storage": "64 GB",
+        "battery": "6000 mAh"
+      },
+      "images": [
+        "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-poco-m3-.jpg"
+      ]
+    },
+    {
+      "brand": "POCO",
+      "model": "POCO C40",
+      "price": "$199",
+      "release_date": "2023-09-15",
+      "features": {
+        "display": "6.7 inches, IPS LCD",
+        "processor": "Snapdragon 680",
+        "ram": "4 GB",
+        "storage": "64 GB",
+        "battery": "6000 mAh"
+      },
+      "images": [
+        "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-poco-c40.jpg"
+      ]
+    },
+    {
+      "brand": "POCO",
+      "model": "POCO X3 NFC",
+      "price": "$279",
+      "release_date": "2023-11-01",
+      "features": {
+        "display": "6.67 inches, IPS LCD",
+        "processor": "Snapdragon 732G",
+        "ram": "6 GB",
+        "storage": "128 GB",
+        "battery": "5160 mAh"
+      },
+      "images": [
+        "https://fdn2.gsmarena.com/vv/bigpic/xiaomi-poco-x3-nfc.jpg"
+      ]
+    },
+    {
+      "brand": "OPPO",
+      "model": "OPPO Find X6 Pro",
+      "price": "$1,199",
+      "release_date": "2024-02-10",
+      "features": {
+        "display": "6.7 inches, AMOLED",
+        "processor": "Snapdragon 8 Gen 2",
+        "ram": "12 GB",
+        "storage": "256 GB",
+        "battery": "5000 mAh"
+      },
+      "images": [
+        "https://fdn2.gsmarena.com/vv/bigpic/oppo-find-x6-pro.jpg"
+      ]
+    },
+    {
+      "brand": "OPPO",
+      "model": "OPPO Reno 9",
+      "price": "$699",
+      "release_date": "2023-11-25",
+      "features": {
+        "display": "6.5 inches, AMOLED",
+        "processor": "MediaTek Dimensity 1200",
+        "ram": "8 GB",
+        "storage": "128 GB",
+        "battery": "4500 mAh"
+      },
+      "images": [
+        "https://fdn2.gsmarena.com/vv/bigpic/oppo-reno9.jpg"
+      ]
+    },
+    {
+      "brand": "OPPO",
+      "model": "OPPO A98",
+      "price": "$499",
+      "release_date": "2023-12-15",
+      "features": {
+        "display": "6.4 inches, IPS LCD",
+        "processor": "Snapdragon 680",
+        "ram": "6 GB",
+        "storage": "128 GB",
+        "battery": "5000 mAh"
+      },
+      "images": [
+        "https://fdn2.gsmarena.com/vv/bigpic/oppo-a98-5g.jpg"
+      ]
+    },
+    {
+      "brand": "OPPO",
+      "model": "OPPO Find N2",
+      "price": "$1,399",
+      "release_date": "2024-01-30",
+      "features": {
+        "display": "7.1 inches, Foldable AMOLED",
+        "processor": "Snapdragon 8 Gen 2",
+        "ram": "12 GB",
+        "storage": "256 GB",
+        "battery": "4500 mAh"
+      },
+      "images": [
+        "https://fdn2.gsmarena.com/vv/bigpic/oppo-find-n2-5g.jpg"
+      ]
+    },
+    {
+      "brand": "OPPO",
+      "model": "OPPO F21 Pro",
+      "price": "$349",
+      "release_date": "2023-10-20",
+      "features": {
+        "display": "6.43 inches, AMOLED",
+        "processor": "Snapdragon 680",
+        "ram": "6 GB",
+        "storage": "128 GB",
+        "battery": "4500 mAh"
+      },
+      "images": [
+        "https://fdn2.gsmarena.com/vv/bigpic/oppo-reno7-4g.jpg"
+      ]
+    },
+    {
+      "brand": "OPPO",
+      "model": "OPPO A78",
+      "price": "$279",
+      "release_date": "2023-11-10",
+      "features": {
+        "display": "6.5 inches, IPS LCD",
+        "processor": "MediaTek Dimensity 700",
+        "ram": "4 GB",
+        "storage": "64 GB",
+        "battery": "5000 mAh"
+      },
+      "images": [
+        "https://fdn2.gsmarena.com/vv/bigpic/oppo-a58.jpg"
+      ]
+    },
+    {
+      "brand": "OPPO",
+      "model": "OPPO Reno 8",
+      "price": "$599",
+      "release_date": "2023-09-25",
+      "features": {
+        "display": "6.55 inches, AMOLED",
+        "processor": "Snapdragon 870",
+        "ram": "8 GB",
+        "storage": "128 GB",
+        "battery": "4500 mAh"
+      },
+      "images": [
+        "https://fdn2.gsmarena.com/vv/bigpic/oppo-reno8.jpg"
+      ]
+    },
+    {
+      "brand": "OPPO",
+      "model": "OPPO A96",
+      "price": "$399",
+      "release_date": "2023-10-15",
+      "features": {
+        "display": "6.59 inches, IPS LCD",
+        "processor": "Snapdragon 695",
+        "ram": "8 GB",
+        "storage": "128 GB",
+        "battery": "5000 mAh"
+      },
+      "images": [
+        "https://fdn2.gsmarena.com/vv/bigpic/oppo-a96-new.jpg"
+      ]
+    },
+    {
+      "brand": "OPPO",
+      "model": "OPPO Find X6",
+      "price": "$999",
+      "release_date": "2024-02-05",
+      "features": {
+        "display": "6.7 inches, AMOLED",
+        "processor": "Snapdragon 8 Gen 2",
+        "ram": "12 GB",
+        "storage": "256 GB",
+        "battery": "5000 mAh"
+      },
+      "images": [
+        "https://fdn2.gsmarena.com/vv/bigpic/oppo-find-x6-pro.jpg"
+      ]
+    },
+    {
+      "brand": "OPPO",
+      "model": "OPPO F19 Pro",
+      "price": "$349",
+      "release_date": "2023-11-01",
+      "features": {
+        "display": "6.43 inches, AMOLED",
+        "processor": "MediaTek Helio P95",
+        "ram": "8 GB",
+        "storage": "128 GB",
+        "battery": "4310 mAh"
+      },
+      "images": [
+        "https://fdn2.gsmarena.com/vv/bigpic/oppo-f19-pro-r.jpg"
+      ]
+    },
+    {
+      "brand": "OPPO",
+      "model": "OPPO A54",
+      "price": "$299",
+      "release_date": "2023-12-20",
+      "features": {
+        "display": "6.51 inches, IPS LCD",
+        "processor": "MediaTek Helio P35",
+        "ram": "4 GB",
+        "storage": "64 GB",
+        "battery": "5000 mAh"
+      },
+      "images": [
+        "https://fdn2.gsmarena.com/vv/bigpic/oppo-a54.jpg"
+      ]
+    },
+    {
+      "brand": "Motorola",
+      "model": "Motorola Edge 40 Pro",
+      "price": "$999",
+      "release_date": "2024-01-10",
+      "features": {
+        "display": "6.7 inches, AMOLED",
+        "processor": "Snapdragon 8 Gen 2",
+        "ram": "12 GB",
+        "storage": "256 GB",
+        "battery": "5000 mAh"
+      },
+      "images": [
+        "https://fdn2.gsmarena.com/vv/bigpic/motorola-edge-40-pro.jpg"
+      ]
+    },
+    {
+      "brand": "Motorola",
+      "model": "Motorola Moto G Power 2024",
+      "price": "$299",
+      "release_date": "2023-11-20",
+      "features": {
+        "display": "6.6 inches, IPS LCD",
+        "processor": "Snapdragon 680",
+        "ram": "4 GB",
+        "storage": "64 GB",
+        "battery": "5000 mAh"
+      },
+      "images": [
+        "https://fdn2.gsmarena.com/vv/bigpic/motorola-moto-g-power-2024.jpg"
+      ]
+    },
+    {
+      "brand": "Motorola",
+      "model": "Motorola Razr 2024",
+      "price": "$1,299",
+      "release_date": "2024-02-15",
+      "features": {
+        "display": "6.7 inches, Foldable AMOLED",
+        "processor": "Snapdragon 8 Gen 2",
+        "ram": "12 GB",
+        "storage": "256 GB",
+        "battery": "3500 mAh"
+      },
+      "images": [
+        "https://fdn2.gsmarena.com/vv/bigpic/motorola-moto-razr-2022-1.jpg"
+      ]
+    },
+    {
+      "brand": "Motorola",
+      "model": "Motorola Moto G Stylus 2024",
+      "price": "$349",
+      "release_date": "2023-12-10",
+      "features": {
+        "display": "6.8 inches, IPS LCD",
+        "processor": "Snapdragon 678",
+        "ram": "6 GB",
+        "storage": "128 GB",
+        "battery": "5000 mAh"
+      },
+      "images": [
+        "https://fdn2.gsmarena.com/vv/bigpic/motorola-moto-g-stylus-5g-2024.jpg"
+      ]
+    },
+    {
+      "brand": "Motorola",
+      "model": "Motorola One 5G Ace",
+      "price": "$399",
+      "release_date": "2023-10-30",
+      "features": {
+        "display": "6.7 inches, IPS LCD",
+        "processor": "Snapdragon 750G",
+        "ram": "6 GB",
+        "storage": "128 GB",
+        "battery": "5000 mAh"
+      },
+      "images": [
+        "https://fdn2.gsmarena.com/vv/bigpic/motorola-one-5g-ace.jpg"
+      ]
+    },
+    {
+      "brand": "Motorola",
+      "model": "Motorola Moto G60",
+      "price": "$279",
+      "release_date": "2023-11-05",
+      "features": {
+        "display": "6.8 inches, IPS LCD",
+        "processor": "Snapdragon 732G",
+        "ram": "6 GB",
+        "storage": "128 GB",
+        "battery": "6000 mAh"
+      },
+      "images": [
+        "https://fdn2.gsmarena.com/vv/bigpic/motorola-moto-g60.jpg"
+      ]
+    },
+    {
+      "brand": "Motorola",
+      "model": "Motorola Edge 30",
+      "price": "$699",
+      "release_date": "2023-12-20",
+      "features": {
+        "display": "6.7 inches, OLED",
+        "processor": "Snapdragon 778G",
+        "ram": "8 GB",
+        "storage": "128 GB",
+        "battery": "4020 mAh"
+      },
+      "images": [
+        "https://fdn2.gsmarena.com/vv/bigpic/motorola-edge-30-.jpg"
+      ]
+    },
+    {
+      "brand": "Motorola",
+      "model": "Motorola Moto G100",
+      "price": "$499",
+      "release_date": "2023-11-15",
+      "features": {
+        "display": "6.7 inches, LCD",
+        "processor": "Snapdragon 870",
+        "ram": "8 GB",
+        "storage": "128 GB",
+        "battery": "5000 mAh"
+      },
+      "images": [
+        "https://fdn2.gsmarena.com/vv/bigpic/motorola-moto-g100-1.jpg"
+      ]
+    },
+    {
+      "brand": "Motorola",
+      "model": "Motorola Moto G31",
+      "price": "$229",
+      "release_date": "2023-12-01",
+      "features": {
+        "display": "6.4 inches, AMOLED",
+        "processor": "MediaTek Helio G85",
+        "ram": "4 GB",
+        "storage": "64 GB",
+        "battery": "5000 mAh"
+      },
+      "images": [
+        "https://fdn2.gsmarena.com/vv/bigpic/motorola-moto-g31-baby-blue.jpg"
+      ]
+    },
+    {
+      "brand": "Motorola",
+      "model": "Motorola Edge 20 Pro",
+      "price": "$799",
+      "release_date": "2024-01-20",
+      "features": {
+        "display": "6.7 inches, AMOLED",
+        "processor": "Snapdragon 870",
+        "ram": "12 GB",
+        "storage": "256 GB",
+        "battery": "4500 mAh"
+      },
+      "images": [
+        "https://fdn2.gsmarena.com/vv/bigpic/motorola-edge20-pro-.jpg"
+      ]
+    },
+    {
+      "brand": "Realme",
+      "model": "Realme GT 2 Pro",
+      "price": "$799",
+      "release_date": "2024-02-05",
+      "features": {
+        "display": "6.7 inches, AMOLED",
+        "processor": "Snapdragon 8 Gen 2",
+        "ram": "12 GB",
+        "storage": "256 GB",
+        "battery": "5000 mAh"
+      },
+      "images": [
+        "https://fdn2.gsmarena.com/vv/bigpic/realme-gt2-pro.jpg"
+      ]
+    },
+    {
+      "brand": "Realme",
+      "model": "Realme 9 Pro+",
+      "price": "$449",
+      "release_date": "2023-11-25",
+      "features": {
+        "display": "6.4 inches, Super AMOLED",
+        "processor": "MediaTek Dimensity 920",
+        "ram": "8 GB",
+        "storage": "128 GB",
+        "battery": "4500 mAh"
+      },
+      "images": [
+        "https://fdn2.gsmarena.com/vv/bigpic/realme-9-pro.jpg"
+      ]
+    },
+    {
+      "brand": "Realme",
+      "model": "Realme C35",
+      "price": "$199",
+      "release_date": "2023-10-30",
+      "features": {
+        "display": "6.6 inches, IPS LCD",
+        "processor": "Unisoc T616",
+        "ram": "4 GB",
+        "storage": "64 GB",
+        "battery": "5000 mAh"
+      },
+      "images": [
+        "https://fdn2.gsmarena.com/vv/bigpic/realme-c35.jpg"
+      ]
+    },
+    {
+      "brand": "Realme",
+      "model": "Realme Narzo 50",
+      "price": "$229",
+      "release_date": "2023-09-25",
+      "features": {
+        "display": "6.5 inches, IPS LCD",
+        "processor": "MediaTek Helio G96",
+        "ram": "4 GB",
+        "storage": "64 GB",
+        "battery": "5000 mAh"
+      },
+      "images": [
+        "https://fdn2.gsmarena.com/vv/bigpic/realme-narzo-50.jpg"
+      ]
+    },
+    {
+      "brand": "Realme",
+      "model": "Realme GT Neo 3",
+      "price": "$599",
+      "release_date": "2023-12-10",
+      "features": {
+        "display": "6.7 inches, AMOLED",
+        "processor": "MediaTek Dimensity 8100",
+        "ram": "8 GB",
+        "storage": "128 GB",
+        "battery": "4500 mAh"
+      },
+      "images": [
+        "https://fdn2.gsmarena.com/vv/bigpic/realme-gt-neo3-new.jpg"
+      ]
+    },
+    {
+      "brand": "Realme",
+      "model": "Realme 10",
+      "price": "$399",
+      "release_date": "2023-11-10",
+      "features": {
+        "display": "6.4 inches, Super AMOLED",
+        "processor": "Snapdragon 680",
+        "ram": "6 GB",
+        "storage": "128 GB",
+        "battery": "5000 mAh"
+      },
+      "images": [
+        "https://fdn2.gsmarena.com/vv/bigpic/realme-10.jpg"
+      ]
+    },
+    {
+      "brand": "Realme",
+      "model": "Realme X50 Pro",
+      "price": "$749",
+      "release_date": "2024-01-05",
+      "features": {
+        "display": "6.44 inches, Super AMOLED",
+        "processor": "Snapdragon 865",
+        "ram": "8 GB",
+        "storage": "128 GB",
+        "battery": "4200 mAh"
+      },
+      "images": [
+        "https://fdn2.gsmarena.com/vv/bigpic/realme-x50-pro-5g-.jpg"
+      ]
+    },
+    {
+      "brand": "Realme",
+      "model": "Realme 8 Pro",
+      "price": "$349",
+      "release_date": "2023-12-01",
+      "features": {
+        "display": "6.4 inches, Super AMOLED",
+        "processor": "Snapdragon 720G",
+        "ram": "6 GB",
+        "storage": "128 GB",
+        "battery": "4500 mAh"
+      },
+      "images": [
+        "https://fdn2.gsmarena.com/vv/bigpic/realme-8-pro-ofic.jpg"
+      ]
+    },
+    {
+      "brand": "Realme",
+      "model": "Realme 7 Pro",
+      "price": "$299",
+      "release_date": "2023-11-15",
+      "features": {
+        "display": "6.4 inches, Super AMOLED",
+        "processor": "Snapdragon 720G",
+        "ram": "6 GB",
+        "storage": "128 GB",
+        "battery": "4500 mAh"
+      },
+      "images": [
+        "https://fdn2.gsmarena.com/vv/bigpic/realme-7-pro.jpg"
+      ]
+    },
+    {
+      "brand": "Realme",
+      "model": "Realme X7 Max",
+      "price": "$549",
+      "release_date": "2023-10-20",
+      "features": {
+        "display": "6.43 inches, Super AMOLED",
+        "processor": "MediaTek Dimensity 1200",
+        "ram": "8 GB",
+        "storage": "128 GB",
+        "battery": "4500 mAh"
+      },
+      "images": [
+        "https://fdn2.gsmarena.com/vv/bigpic/realme-x7-max-5g.jpg"
+      ]
+    },
+    {
+      "brand": "iQOO",
+      "model": "iQOO 9 Pro",
+      "price": "$899",
+      "release_date": "2024-02-10",
+      "features": {
+        "display": "6.78 inches, AMOLED",
+        "processor": "Snapdragon 8 Gen 2",
+        "ram": "12 GB",
+        "storage": "256 GB",
+        "battery": "4700 mAh"
+      },
+      "images": [
+        "https://fdn2.gsmarena.com/vv/bigpic/vivo-iqoo-9-pro-global.jpg"
+      ]
+    },
+    {
+      "brand": "iQOO",
+      "model": "iQOO Z7",
+      "price": "$349",
+      "release_date": "2023-11-20",
+      "features": {
+        "display": "6.64 inches, IPS LCD",
+        "processor": "Snapdragon 782G",
+        "ram": "8 GB",
+        "storage": "128 GB",
+        "battery": "5000 mAh"
+      },
+      "images": [
+        "https://fdn2.gsmarena.com/vv/bigpic/vivo-iqoo-z7-in.jpg"
+      ]
+    },
+    {
+      "brand": "iQOO",
+      "model": "iQOO Neo 7",
+      "price": "$499",
+      "release_date": "2023-12-05",
+      "features": {
+        "display": "6.78 inches, AMOLED",
+        "processor": "MediaTek Dimensity 9000+",
+        "ram": "12 GB",
+        "storage": "256 GB",
+        "battery": "5000 mAh"
+      },
+      "images": [
+        "https://fdn2.gsmarena.com/vv/bigpic/iqoo-neo-7-pro-1.jpg"
+      ]
+    },
+    {
+      "brand": "iQOO",
+      "model": "iQOO 8",
+      "price": "$749",
+      "release_date": "2023-11-15",
+      "features": {
+        "display": "6.56 inches, AMOLED",
+        "processor": "Snapdragon 888+",
+        "ram": "8 GB",
+        "storage": "128 GB",
+        "battery": "4350 mAh"
+      },
+      "images": [
+        "https://fdn2.gsmarena.com/vv/bigpic/vivo-iqoo-8.jpg"
+      ]
+    },
+    {
+      "brand": "iQOO",
+      "model": "iQOO Z6 Pro",
+      "price": "$399",
+      "release_date": "2023-10-30",
+      "features": {
+        "display": "6.44 inches, AMOLED",
+        "processor": "Snapdragon 778G",
+        "ram": "8 GB",
+        "storage": "128 GB",
+        "battery": "4700 mAh"
+      },
+      "images": [
+        "https://fdn2.gsmarena.com/vv/bigpic/vivo-iqoo-z6-pro.jpg"
+      ]
+    },
+    {
+      "brand": "iQOO",
+      "model": "iQOO 7",
+      "price": "$599",
+      "release_date": "2023-12-20",
+      "features": {
+        "display": "6.62 inches, AMOLED",
+        "processor": "Snapdragon 870",
+        "ram": "8 GB",
+        "storage": "128 GB",
+        "battery": "4400 mAh"
+      },
+      "images": [
+        "https://fdn2.gsmarena.com/vv/bigpic/vivo-iqoo-7.jpg"
+      ]
+    },
+    {
+      "brand": "iQOO",
+      "model": "iQOO 5 Pro",
+      "price": "$699",
+      "release_date": "2023-11-10",
+      "features": {
+        "display": "6.56 inches, AMOLED",
+        "processor": "Snapdragon 865",
+        "ram": "8 GB",
+        "storage": "128 GB",
+        "battery": "4000 mAh"
+      },
+      "images": [
+        "https://fdn2.gsmarena.com/vv/bigpic/vivo-iqoo-5-pro.jpg"
+      ]
+    },
+    {
+      "brand": "iQOO",
+      "model": "iQOO Z5",
+      "price": "$299",
+      "release_date": "2023-12-05",
+      "features": {
+        "display": "6.67 inches, IPS LCD",
+        "processor": "Snapdragon 778G",
+        "ram": "6 GB",
+        "storage": "128 GB",
+        "battery": "5000 mAh"
+      },
+      "images": [
+        "https://fdn2.gsmarena.com/vv/bigpic/vivo-iqoo-z5.jpg"
+      ]
+    },
+    {
+      "brand": "Apple",
+      "model": "iPhone 15 Pro",
+      "price": "$999",
+      "release_date": "2023-09-20",
+      "features": {
+        "display": "6.1 inches, Super Retina XDR",
+        "processor": "A17 Bionic",
+        "ram": "6 GB",
+        "storage": "128 GB",
+        "battery": "3095 mAh",
+        "camera": "Triple 48 MP + 12 MP + 12 MP"
+      },
+      "images": [
+        "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-15-pro.jpg"
+      ]
+    },
+    {
+      "brand": "Apple",
+      "model": "iPhone 15",
+      "price": "$799",
+      "release_date": "2023-09-20",
+      "features": {
+        "display": "6.1 inches, Super Retina XDR",
+        "processor": "A16 Bionic",
+        "ram": "6 GB",
+        "storage": "128 GB",
+        "battery": "3095 mAh",
+        "camera": "Dual 48 MP + 12 MP"
+      },
+      "images": [
+        "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-15.jpg"
+      ]
+    },
+    {
+      "brand": "Apple",
+      "model": "iPhone 15 Mini",
+      "price": "$699",
+      "release_date": "2023-09-20",
+      "features": {
+        "display": "5.4 inches, Super Retina XDR",
+        "processor": "A16 Bionic",
+        "ram": "6 GB",
+        "storage": "128 GB",
+        "battery": "2406 mAh",
+        "camera": "Dual 48 MP + 12 MP"
+      },
+      "images": [
+        "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-13-mini.jpg"
+      ]
+    },
+    {
+      "brand": "Apple",
+      "model": "iPhone 14 Pro",
+      "price": "$999",
+      "release_date": "2022-09-16",
+      "features": {
+        "display": "6.1 inches, Super Retina XDR",
+        "processor": "A16 Bionic",
+        "ram": "6 GB",
+        "storage": "128 GB",
+        "battery": "3095 mAh",
+        "camera": "Triple 48 MP + 12 MP + 12 MP"
+      },
+      "images": [
+        "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-14-pro.jpg"
+      ]
+    },
+    {
+      "brand": "Apple",
+      "model": "iPhone 14",
+      "price": "$799",
+      "release_date": "2022-09-16",
+      "features": {
+        "display": "6.1 inches, Super Retina XDR",
+        "processor": "A15 Bionic",
+        "ram": "6 GB",
+        "storage": "128 GB",
+        "battery": "3095 mAh",
+        "camera": "Dual 12 MP + 12 MP"
+      },
+      "images": [
+        "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-14.jpg"
+      ]
+    },
+    {
+      "brand": "Apple",
+      "model": "iPhone 14 Plus",
+      "price": "$899",
+      "release_date": "2022-09-16",
+      "features": {
+        "display": "6.7 inches, Super Retina XDR",
+        "processor": "A15 Bionic",
+        "ram": "6 GB",
+        "storage": "128 GB",
+        "battery": "4323 mAh",
+        "camera": "Dual 12 MP + 12 MP"
+      },
+      "images": [
+        "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-14-plus.jpg"
+      ]
+    },
+    {
+      "brand": "Apple",
+      "model": "iPhone SE (2024)",
+      "price": "$429",
+      "release_date": "2024-03-15",
+      "features": {
+        "display": "4.7 inches, Retina HD",
+        "processor": "A15 Bionic",
+        "ram": "4 GB",
+        "storage": "64 GB",
+        "battery": "1821 mAh",
+        "camera": "Single 12 MP"
+      },
+      "images": [
+        "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-se-2022.jpg"
+      ]
+    },
+    {
+      "brand": "Apple",
+      "model": "iPhone 13 Pro",
+      "price": "$999",
+      "release_date": "2021-09-24",
+      "features": {
+        "display": "6.1 inches, Super Retina XDR",
+        "processor": "A15 Bionic",
+        "ram": "6 GB",
+        "storage": "128 GB",
+        "battery": "3095 mAh",
+        "camera": "Triple 12 MP + 12 MP + 12 MP"
+      },
+      "images": [
+        "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-13-pro.jpg"
+      ]
+    },
+    {
+      "brand": "Apple",
+      "model": "iPhone 13",
+      "price": "$799",
+      "release_date": "2021-09-24",
+      "features": {
+        "display": "6.1 inches, Super Retina XDR",
+        "processor": "A15 Bionic",
+        "ram": "4 GB",
+        "storage": "128 GB",
+        "battery": "3240 mAh",
+        "camera": "Dual 12 MP + 12 MP"
+      },
+      "images": [
+        "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-13.jpg"
+      ]
+    },
+    {
+      "brand": "Apple",
+      "model": "iPhone 13 Mini",
+      "price": "$699",
+      "release_date": "2021-09-24",
+      "features": {
+        "display": "5.4 inches, Super Retina XDR",
+        "processor": "A15 Bionic",
+        "ram": "4 GB",
+        "storage": "128 GB",
+        "battery": "2406 mAh",
+        "camera": "Dual 12 MP + 12 MP"
+      },
+      "images": [
+        "https://fdn2.gsmarena.com/vv/bigpic/apple-iphone-13-mini.jpg"
+      ]
+    }
+  ]
+
+}
