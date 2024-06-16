@@ -1,6 +1,33 @@
-import React from 'react';
+
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
+import toast from 'react-hot-toast';
 
 const ContactUs = () => {
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('service_6ozy29j', 'template_zbpnjaq', form.current, {
+        publicKey: '1yDnreLSqhlPxnFrs',
+      })
+      .then(
+        () => {
+          console.log('SUCCESS!');
+          toast.success("Email has been sent!")
+          form.current.reset();  // Clear the form
+
+
+        },
+        (error) => {
+          console.log('FAILED...', error.text);
+        },
+      );
+  };
+
   return (
     <section className="bg-slate-100 dark:bg-slate-800" id="contact">
       <div className="mx-auto max-w-7xl px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
@@ -54,19 +81,21 @@ const ContactUs = () => {
             </div>
             <div className="card h-fit max-w-6xl p-5 md:p-12" id="form">
               <h2 className="mb-4 text-2xl font-bold text-black dark:text-white">Ready to Get Started?</h2>
-              <form id="contactForm">
-                <div className="mb-6">
+
+              
+              <form ref={form} onSubmit={sendEmail}>
+              <div className="mb-6">
                   <div className="mx-0 mb-4">
                     <label htmlFor="name" className="pb-1 text-xs uppercase tracking-wider sr-only">Name</label>
-                    <input type="text" id="name" autoComplete="given-name" placeholder="Your name" className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md text-black" name="name" />
+                    <input type="text" id="name" autoComplete="given-name" name="user_name" placeholder="Your name" className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md text-black" />
                   </div>
                   <div className="mx-0 mb-4">
                     <label htmlFor="email" className="pb-1 text-xs uppercase tracking-wider sr-only">Email</label>
-                    <input type="email" id="email" autoComplete="email" placeholder="Your email address" className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md text-black" name="email" />
+                    <input type="email" id="email" autoComplete="email" name="user_email" placeholder="Your email address" className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md text-black"  />
                   </div>
                   <div className="mx-0 mb-4">
                     <label htmlFor="textarea" className="pb-1 text-xs uppercase tracking-wider sr-only">Message</label>
-                    <textarea id="textarea" name="textarea" cols="30" rows="5" placeholder="Write your message..." className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md text-black"></textarea>
+                    <textarea id="textarea" cols="30" rows="5" name="message" placeholder="Write your message..." className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md text-black"></textarea>
                   </div>
                 </div>
                 <div className="text-center">
