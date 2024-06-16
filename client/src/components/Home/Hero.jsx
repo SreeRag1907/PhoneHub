@@ -49,7 +49,7 @@ function Hero() {
           <img
             className="object-cover w-[900px] max-xl:w-[600px] max-lg:w-[800px] max-md:w-[400px]"
             src="https://demo.phlox.pro/shop-mobile/wp-content/uploads/sites/218/2020/08/header_image@2x.png"
-            alt=""
+            alt="Smartphone"
           />
         </motion.div>
       </div>

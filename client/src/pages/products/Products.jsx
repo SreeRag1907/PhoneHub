@@ -1,6 +1,7 @@
+// Products.js
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import AllProducts from "../../components/Products/AllProducts";
+import AllProducts from "./AllProducts";
 
 const Products = () => {
   const navigate = useNavigate();
@@ -16,14 +17,13 @@ const Products = () => {
     { name: "Apple", image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjoU2lZ2eJX3aCMfiFDt39uRNcDu9W7pTKcyZymE2iKa7IOVaI&usqp=CAU" },
   ];
 
-  
   const handleNavigation = (brand) => {
     navigate(`/brand-details/${brand}`);
   };
 
   return (
-    <section className="text-gray-600 mx-10 body-font">
-      <div className="container py-32">
+    <section className="text-gray-600 mx-4 sm:mx-10 body-font">
+      <div className="container py-10 sm:py-32">
         <div className="flex flex-wrap w-full">
           <div className="w-full text-center">
             <h1 className="sm:text-4xl text-2xl mb-6 font-bold font-mono title-font text-gray-900 dark:text-white">
@@ -31,15 +31,15 @@ const Products = () => {
             </h1>
           </div>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4 rounded-xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 p-2">
+        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4 rounded-xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 p-2">
           {brands.map((brand) => (
             <div
               key={brand.name}
-              className="bg-white  transition-transform duration-300 hover:scale-110 border-4 border-black p-2 rounded-xl"
+              className="bg-white transition-transform duration-300 hover:scale-110 border-4 border-black p-2 rounded-xl"
               onClick={() => handleNavigation(brand.name)}
             >
               <img
-                className="h-40 w-full object-scale-down cursor-pointer rounded"
+                className="h-24 sm:h-40 w-full object-scale-down cursor-pointer rounded"
                 src={brand.image}
                 alt={brand.name}
               />
@@ -48,7 +48,7 @@ const Products = () => {
         </div>
       </div>
 
-      <AllProducts/>
+      <AllProducts />
     </section>
   );
 };
