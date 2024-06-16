@@ -46,6 +46,10 @@ app.post("/api/create-checkout-session", async (req, res) => {
     }
 });
 
+app.get("/", (req, res) => {
+    res.send("Hello, Express is running!");
+});
+
 app.listen(7000, () => {
     console.log("Server started on port 7000");
 });
