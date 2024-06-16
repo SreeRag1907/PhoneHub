@@ -1,11 +1,18 @@
 const express = require("express");
 const app = express();
 const cors = require("cors");
+const dotenv = require("dotenv");
+
+dotenv.config();
 
 const stripe = require("stripe")("sk_test_51PRcK7IuK6CXozMpf6h9Jp0pK8lNgSlQV8cSXXDcUWJVTX8SVZNA5k4AuMtCVXjaVi8cJ1MEXriJCxdiq3VKMihY00IzOG0HFy");
 
 app.use(express.json());
 app.use(cors());
+
+// Determine the success and cancel URLs based on the environment
+const successUrl = process.env.NODE_ENV === 'production' ? process.env.SUCCESS_URL_PROD : process.env.SUCCESS_URL_DEV;
+const cancelUrl = process.env.NODE_ENV === 'production' ? process.env.CANCEL_URL_PROD : process.env.CANCEL_URL_DEV;
 
 // Checkout API
 app.post("/api/create-checkout-session", async (req, res) => {
@@ -35,8 +42,8 @@ app.post("/api/create-checkout-session", async (req, res) => {
             payment_method_types: ["card"],
             line_items: lineItems,
             mode: "payment",
-            success_url: "https://phone-hub-ivory.vercel.app/success",
-            cancel_url: "https://phone-hub-ivory.vercel.app/cancel",
+            success_url: successUrl,
+            cancel_url: cancelUrl,
         });
 
         res.json({ id: session.id });
