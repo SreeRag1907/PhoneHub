@@ -47,7 +47,7 @@ const Cart = () => {
 
  
     try {
-      const serverAddress = process.env.NODE_ENV === 'production' ? 'https://phone-hub-server-zeta.vercel.app' : 'https://phone-hub-server-zeta.vercel.app';
+      const serverAddress = process.env.NODE_ENV === 'production' && 'https://phone-hub-server-zeta.vercel.app';
       const response = await fetch(`${serverAddress}/api/create-checkout-session`, {
         method: "POST",
         headers: headers,
