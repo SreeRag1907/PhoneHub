@@ -1,6 +1,4 @@
-Certainly! Below is a README template with code snippets and instructions tailored for your PhoneHub project:
 
-```markdown
 # PhoneHub
 
 PhoneHub is a web application for a smartphone store, showcasing the latest brands and phones available in the market.
@@ -90,7 +88,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - Thanks to the creators of React, Tailwind CSS, Framer Motion, Firebase, Firestore, Redux, and Stripe for their awesome tools and services.
 
-```
 
 ### Notes:
 - Replace `your-username` in the GitHub repository URL with your actual GitHub username.
