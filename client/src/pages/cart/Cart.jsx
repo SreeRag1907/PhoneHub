@@ -51,16 +51,34 @@ const Cart = () => {
       body: JSON.stringify(body),
     });
 
-    const session = await response.json();
-
-    const result = await stripe.redirectToCheckout({
-      sessionId: session.id,
-    });
-
-    if (result.error) {
-      console.log(result.error);
+    try {
+      const serverAddress = process.env.NODE_ENV === 'production' ? 'https://phone-hub-server-zeta.vercel.app' : 'https://phone-hub-server-zeta.vercel.app';
+      const response = await fetch(`${serverAddress}/api/create-checkout-session`, {
+        method: "POST",
+        headers: headers,
+        body: JSON.stringify(body),
+      });
+  
+      if (!response.ok) {
+        throw new Error(`Failed to create checkout session. Status: ${response.status}`);
+      }
+  
+      const session = await response.json();
+  
+      const result = await stripe.redirectToCheckout({
+        sessionId: session.id,
+      });
+  
+      if (result.error) {
+        console.error("Error redirecting to Checkout:", result.error);
+        toast.error("Error redirecting to Checkout. Please try again.");
+      }
+    } catch (error) {
+      console.error("Error creating checkout session:", error);
+      toast.error("Error creating checkout session. Please try again.");
     }
   };
+
 
   return (
     <div className="h-auto flex flex-col justify-between max-w-5xl max-md:max-w-xl mx-auto bg-white py-14 p-5 font-mono dark:bg-gray-900 ">
