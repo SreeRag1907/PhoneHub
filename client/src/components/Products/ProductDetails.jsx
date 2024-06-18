@@ -90,8 +90,7 @@ const ProductDetails = () => {
     };
   
     try {
-      const serverAddress = process.env.NODE_ENV === 'production' ? 'https://phone-hub-ivory.vercel.app' : 'http://localhost:7000';
-      const response = await fetch(`${serverAddress}/api/create-checkout-session`, {
+      const response = await fetch(`https://phone-hub-ivory.vercel.app/api/create-checkout-session`, {
         method: "POST",
         headers: headers,
         body: JSON.stringify(body),
