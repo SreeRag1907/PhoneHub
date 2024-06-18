@@ -17,10 +17,11 @@ const cancelUrl =
     : process.env.CANCEL_URL_DEV;
 app.use(express.json());
 app.use(cors({
-  origin: "https://phone-hub-ivory.vercel.app",
+  origin: "https://phone-hub-ivory.vercel.app", // Replace with your frontend URL
   methods: ["GET", "POST"],
   allowedHeaders: ["Content-Type"],
 }));
+
 
 // Checkout API
 app.post("/api/create-checkout-session", async (req, res) => {
@@ -68,7 +69,6 @@ app.get("/", (req, res) => {
   res.send("Hello, Express is running!");
 });
 
-const PORT = process.env.PORT || 7000;
-app.listen(PORT, () => {
+app.listen(7000, () => {
   console.log(`Server started on port ${PORT}`);
 });
