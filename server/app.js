@@ -16,7 +16,11 @@ const cancelUrl =
     ? process.env.CANCEL_URL_PROD
     : process.env.CANCEL_URL_DEV;
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+  origin: "https://phone-hub-ivory.vercel.app",
+  methods: ["GET", "POST"],
+  allowedHeaders: ["Content-Type"],
+}));
 
 // Checkout API
 app.post("/api/create-checkout-session", async (req, res) => {
