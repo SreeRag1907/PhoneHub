@@ -45,12 +45,7 @@ const Cart = () => {
       "Content-Type": "application/json",
     };
 
-    const response = await fetch("http://localhost:7000/api/create-checkout-session", {
-      method: "POST",
-      headers: headers,
-      body: JSON.stringify(body),
-    });
-
+ 
     try {
       const serverAddress = process.env.NODE_ENV === 'production' ? 'https://phone-hub-server-zeta.vercel.app' : 'https://phone-hub-server-zeta.vercel.app';
       const response = await fetch(`${serverAddress}/api/create-checkout-session`, {
