@@ -20,6 +20,7 @@ import { auth, db } from "./authentication/firebase";
 import { onAuthStateChanged, signOut } from "firebase/auth";
 import { doc, getDoc } from "firebase/firestore";
 import UserProfile from "./components/Home/UserProfile";
+import AboutPage from "./pages/about/AboutPage";
 
 const App = () => {
   const [user, setUser] = useState(null);
@@ -56,6 +57,7 @@ const App = () => {
             <Route path="/" element={<Home />} />
             <Route path="/products" element={<Products />} />
             <Route path="/contact-us" element={<ContactUs />} />
+            <Route path="/about" element={<AboutPage/>} />
             <Route path="/cart" element={<Cart />} />
             <Route path="/brand-details/:brand" element={<BrandDetails />} />
             <Route path="/product-details/:model" element={<ProductDetails />} />
