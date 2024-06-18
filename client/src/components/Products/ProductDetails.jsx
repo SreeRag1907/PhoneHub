@@ -27,15 +27,11 @@ const ProductDetails = () => {
         const selectedPhone = data.phones.find(
           (phone) => phone.model === decodeURIComponent(model)
         );
-        setTimeout(() => {
-          setPhone(selectedPhone);
-          setLoading(false);
-        }, 2000); // Simulate 2 seconds loading time
+        setPhone(selectedPhone);
       } catch (error) {
         console.error("Error fetching phone details:", error);
-        setError(
-          "Error fetching phone details. Please check the console for more details."
-        );
+        setError("Error fetching phone details. Please check the console for more details.");
+      } finally {
         setLoading(false);
       }
     };
@@ -70,31 +66,39 @@ const ProductDetails = () => {
     );
   };
 
-  // Function to handle adding to cart
   const send = (phone) => {
     dispatch(addToCart(phone));
     toast.success("Item Added To Your Cart!");
   };
 
-  // Function to handle payment
   const handlePayment = async () => {
     const stripe = await loadStripe("pk_test_51PRcK7IuK6CXozMpWeX81MOSLWMMRJIUhU38jchyyO5OfJFlgzWZhxiVoPzrNiTcjG42cARLxJU85rCVqsED6oO100XEnZrK6W");
   
-    const productWithDefaultQuantity = { ...phone, quantity: 1 }; // Set quantity to 1 if not specified
+    if (!phone) {
+      toast.error("Phone details not loaded. Please try again.");
+      return;
+    }
+  
+    const productWithDefaultQuantity = { ...phone, quantity: 1 };
   
     const body = {
-      products: [productWithDefaultQuantity], // Assuming only one product is being purchased
+      products: [productWithDefaultQuantity],
     };
     const headers = {
       "Content-Type": "application/json",
     };
   
     try {
-      const response = await fetch(`https://phone-hub-ivory.vercel.app/api/create-checkout-session`, {
+      const serverAddress = process.env.NODE_ENV === 'production' ? 'https://phone-hub-ivory.vercel.app/' : 'http://localhost:7000';
+      const response = await fetch(`${serverAddress}/api/create-checkout-session`, {
         method: "POST",
         headers: headers,
         body: JSON.stringify(body),
       });
+  
+      if (!response.ok) {
+        throw new Error(`Failed to create checkout session. Status: ${response.status}`);
+      }
   
       const session = await response.json();
   
@@ -111,7 +115,6 @@ const ProductDetails = () => {
       toast.error("Error creating checkout session. Please try again.");
     }
   };
-  
 
   return (
     <div className="container mx-auto px-4 py-8">
@@ -158,7 +161,7 @@ const ProductDetails = () => {
                 <div className="lg:col-span-3 w-full lg:sticky top-0 text-center">
                   <div className="px-4 py-10 rounded-xl border-4 border-black relative dark:bg-gray-800">
                     <img
-                      src={phone.images[0]} // Ensure `phone.images` contains valid URL(s)
+                      src={phone.images[0]}
                       className="w-full h-96 object-contain"
                       alt={phone.model}
                     />
@@ -196,7 +199,8 @@ const ProductDetails = () => {
                     <button
                       onClick={() => send(phone)}
                       type="button"
-                      className="min-w-[200px] px-4 py-2.5 border-2 border-black bg-transparent hover:bg-black dark:text-white dark:hover:text-white text-black hover:text-white transition text-sm font-semibold rounded"
+                      className="min-w-[200px] px-4 py-2.5 border-2
+                      border-black bg-transparent hover:bg-black dark:text-white dark:hover:text-white text-black hover:text-white transition text-sm font-semibold rounded"
                     >
                       Add to cart
                     </button>
