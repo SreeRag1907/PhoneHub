@@ -72,6 +72,13 @@ const ProductDetails = () => {
   };
 
   const handlePayment = async () => {
+    const stripe = await loadStripe("pk_test_51PRcK7IuK6CXozMpWeX81MOSLWMMRJIUhU38jchyyO5OfJFlgzWZhxiVoPzrNiTcjG42cARLxJU85rCVqsED6oO100XEnZrK6W");
+  
+    if (!phone) {
+      toast.error("Phone details not loaded. Please try again.");
+      return;
+    }
+  
     const productWithDefaultQuantity = { ...phone, quantity: 1 };
   
     const body = {
@@ -82,20 +89,32 @@ const ProductDetails = () => {
     };
   
     try {
-      const response = await fetch("https://phone-hub-ivory.vercel.app/api/create-checkout-session", {
-        method: "POST", // Ensure method is POST
+      const serverAddress = process.env.NODE_ENV === 'production' ? 'https://phone-hub-ivory.vercel.app' : 'http://localhost:7000';
+      const response = await fetch(`${serverAddress}/api/create-checkout-session`, {
+        method: "POST",
         headers: headers,
         body: JSON.stringify(body),
       });
   
+      if (!response.ok) {
+        throw new Error(`Failed to create checkout session. Status: ${response.status}`);
+      }
+  
       const session = await response.json();
-      // Handle session data as needed
+  
+      const result = await stripe.redirectToCheckout({
+        sessionId: session.id,
+      });
+  
+      if (result.error) {
+        console.error("Error redirecting to Checkout:", result.error);
+        toast.error("Error redirecting to Checkout. Please try again.");
+      }
     } catch (error) {
       console.error("Error creating checkout session:", error);
       toast.error("Error creating checkout session. Please try again.");
     }
   };
-  
 
   return (
     <div className="container mx-auto px-4 py-8">
