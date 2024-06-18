@@ -32,8 +32,7 @@ app.post("/api/create-checkout-session", async (req, res) => {
       if (isNaN(unitAmount)) {
         throw new Error(`Invalid price for product ${product.model}`);
       }
-
-      
+    
       return {
         price_data: {
           currency: "usd",
@@ -42,7 +41,7 @@ app.post("/api/create-checkout-session", async (req, res) => {
           },
           unit_amount: unitAmount,
         },
-        quantity: product.quantity,
+        quantity: product.quantity || 1, // Set default quantity to 1 if not provided
       };
     });
 
