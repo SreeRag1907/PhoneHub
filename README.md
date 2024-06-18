@@ -1,20 +1,35 @@
+                                Hi, I'm C SREERAG ! 👋
 
 # PhoneHub
 
 PhoneHub is a web application for a smartphone store, showcasing the latest brands and phones available in the market.
 
-[PhoneHub Logo](https://phone-hub-ivory.vercel.app/)
+**Click the below Link**
+
+[PhoneHub](https://phone-hub-ivory.vercel.app/)
+
+
+
 
 ## Technologies Used
 
-- **React**: ![React Logo](https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/React-icon.svg/512px-React-icon.svg.png) Frontend JavaScript library for building user interfaces.
-- **Tailwind CSS**: ![Tailwind CSS Logo](https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Tailwind_CSS_Logo.svg/512px-Tailwind_CSS_Logo.svg.png) Utility-first CSS framework for styling.
-- **Framer Motion**: ![Framer Motion Logo](https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Framer_Motion_Logo.svg/512px-Framer_Motion_Logo.svg.png) Animation library for React.
-- **Firebase**: ![Firebase Logo](https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Google_Firebase_Logo_2020.svg/512px-Google_Firebase_Logo_2020.svg.png) Platform for building and running web and mobile applications.
-- **Firestore**: ![Firestore Logo](https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Firestore_Logo_FullColor.svg/512px-Firestore_Logo_FullColor.svg.png) Flexible, scalable database for mobile, web, and server development.
-- **Redux**: ![Redux Logo](https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Redux.png/512px-Redux.png) State management library for JavaScript apps.
-- **Stripe**: ![Stripe Logo](https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/Stripe_Logo%2C_revised_2016.png/512px-Stripe_Logo%2C_revised_2016.png) Payment processing platform for online transactions.
-- **Emailjs**: ![Emailjs Logo](https://example.com/emailjs-logo.png) For sending email in contact us.
+- **React**:  Frontend JavaScript library for building user interfaces.
+- **Tailwind CSS**: Utility-first CSS framework for styling.
+- **Framer Motion**: Animation library for React.
+- **Firebase**: Platform for building and running web and mobile applications.
+- **Firestore**: Flexible, scalable database for mobile, web, and server development.
+- **Redux**:  State management library for JavaScript apps.
+- **Stripe**:  Payment processing platform for online transactions.
+- **Emailjs**:  For sending email in contact us.
+
+
+## Tech Stack
+
+**Client:** React, Redux, TailwindCSS
+
+**Server:** Node, Express
+
+
 
 ## Features
 
@@ -97,4 +112,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Thanks to the creators of React, Tailwind CSS, Framer Motion, Firebase, Firestore, Redux, and Stripe for their awesome tools and services.
 
 
+
+
+## 🔗 Links
+[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://katherineoelsner.com/)
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/)
+[![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/)
 
