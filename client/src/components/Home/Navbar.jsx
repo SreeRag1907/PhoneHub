@@ -1,14 +1,15 @@
 import React, { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import { IoSearch, IoMenu, IoClose, IoPerson } from "react-icons/io5";
+import { IoSearch, IoMenu, IoClose } from "react-icons/io5";
 import { motion, AnimatePresence } from "framer-motion";
 import { signOut, onAuthStateChanged } from "firebase/auth";
 import { auth } from "../../authentication/firebase";
 import Search from "./Search";
 import CartButton from "./CartButton";
 import ThemeToggle from "./ThemeToggle";
+import UserProfile from "./UserProfile";
 
-function Navbar({phones}) {
+function Navbar({userData}) {
   const [isDarkMode, setIsDarkMode] = useState(false);
   const [isSearch, setIsSearch] = useState(false);
   const [isSideMenuOpen, setIsSideMenuOpen] = useState(false);
@@ -20,12 +21,10 @@ function Navbar({phones}) {
     setIsSearch(!isSearch);
   };
 
-
-
   const useDarkMode = (isDarkMode) => {
     useEffect(() => {
       const body = document.body;
-      body.classList.toggle('dark-mode', isDarkMode);
+      body.classList.toggle("dark-mode", isDarkMode);
     }, [isDarkMode]);
   };
 
@@ -42,8 +41,6 @@ function Navbar({phones}) {
   const handleLogin = () => {
     navigate("/login");
   };
-
-
 
   const handleSignOut = async () => {
     try {
@@ -104,8 +101,8 @@ function Navbar({phones}) {
                 </Link>
               </div>
             </motion.div>
-  
-            <ul className="text-gray-700 font-cabin font-semibold tracking-wider hover:text-black cursor-pointer items-center gap-10 hidden xl:flex dark:text-white">
+
+            <ul className="text-gray-700 font-cabin font-semibold tracking-wider hover:text-black cursor-pointer items-center gap-7 hidden xl:flex dark:text-white">
               <motion.li
                 initial={{ y: "-150%", opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
@@ -132,7 +129,7 @@ function Navbar({phones}) {
               </motion.li>
             </ul>
           </div>
-  
+
           {/* Right Side */}
           <motion.div
             initial={{ x: "100%", opacity: 0 }}
@@ -143,49 +140,30 @@ function Navbar({phones}) {
             <AnimatePresence>
               {isSearch && <Search key="search" />}
             </AnimatePresence>
-  
+
             <button className="hidden md:block" onClick={toggleSearch}>
               <IoSearch className="text-2xl font-extrabold cursor-pointer dark:text-white" />
             </button>
             <span className="text-2xl hidden lg:block dark:text-white">|</span>
-  
+
             <ThemeToggle />
-  
+
             <button onClick={toggleSideMenu} className="lg:hidden">
               <IoMenu className="text-2xl font-extrabold cursor-pointer dark:text-white" />
             </button>
-  
+
             <div className="mr-3">
               {/* Cart Button */}
               <CartButton />
             </div>
-  
-            {user ? (
-              <div className="relative hidden lg:block">
-                <div className="absolute inset-0 bg-black rounded-full shadow-lg transform translate-x-1 translate-y-1 transition-transform duration-100 ease-in-out"></div>
-                <div className="relative group">
-                  <div
-                    onClick={toggleDropdown}
-                    className="flex items-center cursor-pointer border-2 p-1 rounded-full px-3 border-black gap-1 bg-white shadow-md transform group-active:translate-x-1 group-active:translate-y-1 transition-transform duration-100 ease-in-out dark:bg-black dark:border-white dark:text-white"
-                  >
-                    <IoPerson className="text-3xl cursor-pointer" />
-                    <p>Hello!</p>
-                  </div>
-                  {isDropdownOpen && (
-                    <div className="absolute right-0 mt-4 w-auto bg-white border border-black rounded-md shadow-lg dark:bg-black dark:border-white dark:text-white">
-                      <div className="px-4 py-2 block text-center text-gray-700 font-semibold dark:text-white">
-                        {user.name || user.email}
-                      </div>
-                      <button
-                        onClick={handleSignOut}
-                        className="block w-full font-bold text-center px-4 py-2 border-t border-gray-200 text-gray-500 hover:text-black dark:border-gray-700 dark:text-gray-300 dark:hover:text-white"
-                      >
-                        Sign Out
-                      </button>
-                    </div>
-                  )}
-                </div>
-              </div>
+
+            {userData ? (
+              <UserProfile
+              userData={userData}
+              handleSignOut={handleSignOut}
+                toggleDropdown={toggleDropdown}
+                isDropdownOpen={isDropdownOpen}
+              />
             ) : (
               <div className="relative hidden lg:block">
                 <div className="absolute inset-0 bg-black dark:bg-white rounded-full shadow-lg transform translate-x-1 translate-y-1 transition-transform duration-100 ease-in-out"></div>
@@ -201,7 +179,7 @@ function Navbar({phones}) {
           </motion.div>
         </div>
       </nav>
-  
+
       {/* Side Menu */}
       <AnimatePresence>
         {isSideMenuOpen && (
@@ -214,7 +192,7 @@ function Navbar({phones}) {
           >
             <div className="fixed right-0 top-0 w-64 bg-white h-full shadow-lg flex flex-col dark:bg-gray-900">
               <button
-                className="self-end m-4 text-2xl font-extrabold dark:text-white"
+                className="self-end              m-4 text-2xl font-extrabold dark:text-white"
                 onClick={toggleSideMenu}
               >
                 <IoClose />
@@ -263,6 +241,6 @@ function Navbar({phones}) {
       </AnimatePresence>
     </>
   );
-}  
+}
 
 export default Navbar;

@@ -128,7 +128,7 @@ const LatestProducts = () => {
                     </button>
                     <button
                       onClick={() => handleNavigation(phone)}
-                      className="bg-white text-black hover:bg-gray-800 p-2 rounded-md hover:text-white border-2 font-semibold transition-colors duration-300"
+                      className="bg-white text-black hover:bg-gray-800 p-2 rounded-md hover:text-white border-2  transition-colors duration-300"
                     >
                       View Product
                     </button>

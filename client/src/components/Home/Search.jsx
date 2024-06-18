@@ -47,7 +47,7 @@ const Search = () => {
     <div className="max-w-screen-lg hidden md:block mx-auto mt-4">
       <div className="relative">
         <input
-          className="w-full rounded-md py-2 px-4 mb-4 outline-none text-black focus:border-blue-500 transition-all duration-300 ease-in-out"
+          className="w-[160px] rounded-md py-2 px-2 mb-4 outline-none text-sm text-black focus:border-blue-500 transition-all duration-300 ease-in-out"
           type="text"
           placeholder="Search for phones"
           value={searchQuery}

@@ -10,17 +10,17 @@ function Hero() {
   };
 
   return (
-    <div className="w-full h-[620px] bg-DarkPrimary relative overflow-hidden p-5 sm:w-full dark:bg-black">
+    <div className="w-full h-[620px] bg-DarkPrimary relative overflow-hidden p-5 sm:w-full dark:bg-black ">
       {/* Container */}
       <div className="w-[90%] h-full m-auto flex flex-col justify-start items-start gap-4 z-50 pt-40 max-xl:pt-40 max-lg:pt-40 max-lg:center">
         {/* Details */}
         <div className="max-lg:h-[80%] max-[1025px]:h-[80%] flex flex-col justify-center items-start gap-4 z-20">
           {/* Hero Details */}
-          <div className="overflow-hidden">
-            <motion.h1
+          <div className="bg-black  dark:bg-white dark:bg-opacity-35 bg-opacity-35 rounded-[30px] p-4  backdrop-filter backdrop-blur-sm ">
+          <motion.h1
               initial={{ x: "-100%", opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
-              className="text-9xl font-bold font-mono text-LightPrimary max-xl:text-8xl max-[980px]:text-7xl max-md:text-6xl max-sm:text-5xl dark:text-white"
+              className="text-9xl font-bold font-mono text-white max-xl:text-8xl max-[980px]:text-7xl max-md:text-6xl max-sm:text-5xl dark:text-white"
             >
               Smartphone <br /> Store{" "}
             </motion.h1>

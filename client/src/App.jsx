@@ -10,37 +10,51 @@ import ErrorBoundary from "./components/ErrorBoundary";
 import BrandDetails from "./components/Products/BrandDetails";
 import Footer from "./components/Footer";
 import ScrollToTop from "./components/ScrollToTop";
-import toast, { Toaster } from 'react-hot-toast';
+import toast, { Toaster } from "react-hot-toast";
 import Login from "./components/Registartion/Login";
 import SignUp from "./components/Registartion/SignUp";
 import Sucess from "./components/Payment/Sucess";
 import Cancel from "./components/Payment/Cancel";
 
-const App = () => {
-  const [phones, setPhones] = useState({});
+import { auth, db } from "./authentication/firebase";
+import { onAuthStateChanged, signOut } from "firebase/auth";
+import { doc, getDoc } from "firebase/firestore";
+import UserProfile from "./components/Home/UserProfile";
 
-  const loadPhones = async () => {
-    try {
-      const res = await fetch("/data.json"); // Assuming data.json is placed in the public directory
-      const data = await res.json();
-      setPhones(data);
-    } catch (error) {
-      console.error("Error fetching phone details", error);
-    }
-  };
+const App = () => {
+  const [user, setUser] = useState(null);
+  const [userData, setUserData] = useState(null);
 
   useEffect(() => {
-    loadPhones();
+    const unsubscribe = onAuthStateChanged(auth, async (user) => {
+      if (user) {
+        setUser(user);
+        const userDocRef = doc(db, "User", user.uid);
+        const userDocSnapshot = await getDoc(userDocRef);
+        if (userDocSnapshot.exists()) {
+          setUserData(userDocSnapshot.data());
+        }
+      } else {
+        setUser(null);
+        setUserData(null);
+      }
+    });
+    return unsubscribe;
   }, []);
+
+ 
 
   return (
     <Router>
       <ScrollToTop />
-      <Layout>
+      <Layout
+        userData={userData}
+        
+      >
         <ErrorBoundary>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/products" element={<Products  />} />
+            <Route path="/products" element={<Products />} />
             <Route path="/contact-us" element={<ContactUs />} />
             <Route path="/cart" element={<Cart />} />
             <Route path="/brand-details/:brand" element={<BrandDetails />} />
@@ -57,17 +71,33 @@ const App = () => {
   );
 };
 
-const Layout = ({ children }) => {
+const Layout = ({ children, userData}) => {
   const location = useLocation();
   const hideNavAndFooter = location.pathname === "/login" || location.pathname === "/sign-up";
 
   return (
-    <>
-      {!hideNavAndFooter && <Navbar  />}
-      {children}
-      {!hideNavAndFooter && <Footer />}
-    </>
+    <div className="min-h-screen flex flex-col">
+      {!hideNavAndFooter && (
+        <header>
+          <Navbar
+            userData={userData}
+           
+          />
+        </header>
+      )}
+      
+      <main className="flex-grow">
+        {children}
+      </main>
+      
+      {!hideNavAndFooter && (
+        <footer>
+          <Footer />
+        </footer>
+      )}
+    </div>
   );
 };
+
 
 export default App;

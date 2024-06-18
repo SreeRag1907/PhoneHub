@@ -31,12 +31,12 @@ const CartItem = ({ item }) => {
 
   return (
     <div className="relative font-mono">
-      <div className="relative bg-white dark:bg-gray-900   rounded-lg border-2 border-black px-5 grid grid-cols-12 gap-4 max-lg:mx-2">
+      <div className="relative bg-white dark:bg-gray-900   rounded-lg border-2 border-black px-5 grid grid-cols-12 gap-4 max-lg:mx-2 p-5">
         <div className="col-span-12 md:col-span-8 flex items-start gap-4 ">
-          <div className="w-28 h-28 max-sm:w-20 max-sm:h-20 bg-gray-100 rounded-sm overflow-hidden">
+          <div className="w-28 h-28 max-sm:w-20 max-sm:h-20 bg-gray-100 rounded-sm overflow-hidden ">
             <img
               src={item.images[0]}
-              className="w-full h-full object-contain "
+              className="w-full h-full object-contain  "
               alt={item.model}
             />
           </div>

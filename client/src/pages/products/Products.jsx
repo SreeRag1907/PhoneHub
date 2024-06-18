@@ -31,7 +31,7 @@ const Products = () => {
             </h1>
           </div>
         </div>
-        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4 rounded-xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 p-2">
+        <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4 rounded-xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 p-5">
           {brands.map((brand) => (
             <div
               key={brand.name}

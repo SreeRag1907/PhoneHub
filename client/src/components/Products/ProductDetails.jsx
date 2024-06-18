@@ -5,11 +5,10 @@ import "react-loading-skeleton/dist/skeleton.css";
 import { addToCart } from "../../redux/features/cartSlice";
 import { useDispatch } from "react-redux";
 import toast from 'react-hot-toast';
-
+import { loadStripe } from "@stripe/stripe-js";
 
 const ProductDetails = () => {
   const dispatch = useDispatch();
-
   const { model } = useParams();
   const [phone, setPhone] = useState(null);
   const [loading, setLoading] = useState(false);
@@ -52,7 +51,7 @@ const ProductDetails = () => {
     if (!phone || !phone.features) return null;
 
     const features = [
-      { label: "DISPLAY", value: phone.features.display,  },
+      { label: "DISPLAY", value: phone.features.display },
       { label: "RAM", value: phone.features.ram },
       { label: "PROCESSOR", value: phone.features.processor },
       { label: "STORAGE", value: phone.features.storage },
@@ -71,11 +70,48 @@ const ProductDetails = () => {
     );
   };
 
+  // Function to handle adding to cart
   const send = (phone) => {
     dispatch(addToCart(phone));
-    toast.success("Item Added To Your Cart!")
-
+    toast.success("Item Added To Your Cart!");
   };
+
+  // Function to handle payment
+  const handlePayment = async () => {
+    const stripe = await loadStripe("pk_test_51PRcK7IuK6CXozMpWeX81MOSLWMMRJIUhU38jchyyO5OfJFlgzWZhxiVoPzrNiTcjG42cARLxJU85rCVqsED6oO100XEnZrK6W");
+  
+    const productWithDefaultQuantity = { ...phone, quantity: 1 }; // Set quantity to 1 if not specified
+  
+    const body = {
+      products: [productWithDefaultQuantity], // Assuming only one product is being purchased
+    };
+    const headers = {
+      "Content-Type": "application/json",
+    };
+  
+    try {
+      const response = await fetch("http://localhost:7000/api/create-checkout-session", {
+        method: "POST",
+        headers: headers,
+        body: JSON.stringify(body),
+      });
+  
+      const session = await response.json();
+  
+      const result = await stripe.redirectToCheckout({
+        sessionId: session.id,
+      });
+  
+      if (result.error) {
+        console.error("Error redirecting to Checkout:", result.error);
+        toast.error("Error redirecting to Checkout. Please try again.");
+      }
+    } catch (error) {
+      console.error("Error creating checkout session:", error);
+      toast.error("Error creating checkout session. Please try again.");
+    }
+  };
+  
 
   return (
     <div className="container mx-auto px-4 py-8">
@@ -122,7 +158,7 @@ const ProductDetails = () => {
                 <div className="lg:col-span-3 w-full lg:sticky top-0 text-center">
                   <div className="px-4 py-10 rounded-xl border-4 border-black relative dark:bg-gray-800">
                     <img
-                      src={phone.images}
+                      src={phone.images[0]} // Ensure `phone.images` contains valid URL(s)
                       className="w-full h-96 object-contain"
                       alt={phone.model}
                     />
@@ -151,6 +187,7 @@ const ProductDetails = () => {
 
                   <div className="flex flex-wrap gap-4 mt-10">
                     <button
+                      onClick={handlePayment}
                       type="button"
                       className="min-w-[200px] px-4 py-3 border-2 bg-black text-white hover:bg-white hover:text-black border-black transition-colors duration-300 text-sm font-semibold rounded"
                     >

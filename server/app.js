@@ -10,53 +10,48 @@ const stripe = require("stripe")("sk_test_51PRcK7IuK6CXozMpf6h9Jp0pK8lNgSlQV8cSX
 app.use(express.json());
 app.use(cors());
 
-// Determine the success and cancel URLs based on the environment
-const successUrl = process.env.NODE_ENV === 'production' ? process.env.SUCCESS_URL_PROD : process.env.SUCCESS_URL_DEV;
-const cancelUrl = process.env.NODE_ENV === 'production' ? process.env.CANCEL_URL_PROD : process.env.CANCEL_URL_DEV;
-
 // Checkout API
 app.post("/api/create-checkout-session", async (req, res) => {
-    try {
-        const { products } = req.body;
+  try {
+    const { products } = req.body;
 
-        const lineItems = products.map((product) => {
-            // Remove dollar sign and commas, then convert to number
-            const unitAmount = parseFloat(product.price.replace(/[$,]/g, "")) * 100;
-            if (isNaN(unitAmount)) {
-                throw new Error(`Invalid price for product ${product.model}`);
-            }
+    const lineItems = products.map((product) => {
+      const unitAmount = parseFloat(product.price.replace(/[$,]/g, "")) * 100;
+      if (isNaN(unitAmount)) {
+        throw new Error(`Invalid price for product ${product.model}`);
+      }
 
-            return {
-                price_data: {
-                    currency: "usd", // Assuming the currency is USD
-                    product_data: {
-                        name: product.model,
-                    },
-                    unit_amount: unitAmount,
-                },
-                quantity: product.quantity,
-            };
-        });
+      return {
+        price_data: {
+          currency: "usd",
+          product_data: {
+            name: product.model,
+          },
+          unit_amount: unitAmount,
+        },
+        quantity: product.quantity,
+      };
+    });
 
-        const session = await stripe.checkout.sessions.create({
-            payment_method_types: ["card"],
-            line_items: lineItems,
-            mode: "payment",
-            success_url: successUrl,
-            cancel_url: cancelUrl,
-        });
+    const session = await stripe.checkout.sessions.create({
+      payment_method_types: ["card"],
+      line_items: lineItems,
+      mode: "payment",
+      success_url: "your_success_url",
+      cancel_url: "your_cancel_url",
+    });
 
-        res.json({ id: session.id });
-    } catch (error) {
-        console.error(error);
-        res.status(500).send("Internal Server Error");
-    }
+    res.json({ id: session.id });
+  } catch (error) {
+    console.error(error);
+    res.status(500).send("Internal Server Error");
+  }
 });
 
 app.get("/", (req, res) => {
-    res.send("Hello, Express is running!");
+  res.send("Hello, Express is running!");
 });
 
 app.listen(7000, () => {
-    console.log("Server started on port 7000");
+  console.log("Server started on port 7000");
 });

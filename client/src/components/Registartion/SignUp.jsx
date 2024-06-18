@@ -25,7 +25,7 @@ const SignUp = () => {
       if (user) {
         await setDoc(doc(db, "User", user.uid), {
           email: user.email,
-          name: name,
+          name:name,
         });
       }
       console.log("success");

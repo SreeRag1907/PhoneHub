@@ -87,11 +87,11 @@ const ContactUs = () => {
               <div className="mb-6">
                   <div className="mx-0 mb-4">
                     <label htmlFor="name" className="pb-1 text-xs uppercase tracking-wider sr-only">Name</label>
-                    <input type="text" id="name" autoComplete="given-name" name="user_name" placeholder="Your name" className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md text-black" />
+                    <input type="text" id="name" autoComplete="given-name" name="to_name" placeholder="Your name" className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md text-black" />
                   </div>
                   <div className="mx-0 mb-4">
                     <label htmlFor="email" className="pb-1 text-xs uppercase tracking-wider sr-only">Email</label>
-                    <input type="email" id="email" autoComplete="email" name="user_email" placeholder="Your email address" className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md text-black"  />
+                    <input type="email" id="email" autoComplete="email" name="from_name" placeholder="Your email address" className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md text-black"  />
                   </div>
                   <div className="mx-0 mb-4">
                     <label htmlFor="textarea" className="pb-1 text-xs uppercase tracking-wider sr-only">Message</label>

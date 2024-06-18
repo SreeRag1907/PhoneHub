@@ -86,7 +86,7 @@ const BrandDetails = () => {
     <div className="container mx-auto px-4 py-8 dark:text-white">
       <button
         onClick={handleBackNavigation}
-        className="mb-4 mt-20 min-w-[100px] px-4 py-3 bg-[#333] hover:bg-[#111] text-white text-sm font-semibold rounded-lg shadow-md transition-colors duration-300"
+        className="mb-4 mt-20 min-w-[100px]  px-4 py-3 bg-[#333] hover:bg-[#111] text-white text-sm font-semibold rounded-lg shadow-md transition-colors duration-300"
       >
         Back
       </button>
@@ -95,11 +95,9 @@ const BrandDetails = () => {
       </h1>
 
       {/* Filter Section */}
-      <div className="flex justify-between mb-4">
-        <div>
-          <label className="text-center mr-2 mt-2 dark:text-white">
-            Search :
-          </label>
+      <div className="flex flex-col sm:flex-row justify-between mb-4">
+        <div className="mb-4 sm:mb-0">
+          <label className="mr-2 dark:text-white">Search:</label>
           <input
             type="text"
             placeholder="Search by model..."
@@ -108,7 +106,7 @@ const BrandDetails = () => {
             className="px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-blue-500 dark:bg-gray-800 dark:border-gray-600 dark:text-white"
           />
         </div>
-        <div className="ml-4">
+        <div>
           <label className="mr-2 dark:text-white">Sort by Price:</label>
           <select
             value={sortBy}
@@ -131,7 +129,7 @@ const BrandDetails = () => {
               key={index}
               className="card border-4 drop-shadow-xl shadow-black border-black bg-white dark:bg-gray-800 rounded-2xl shadow-lg overflow-hidden transition-transform duration-300"
             >
-              <div className="relative bg-slate-50  p-3">
+              <div className="relative bg-slate-50 p-3">
                 <Skeleton height={240} />
               </div>
               <div className="p-4 text-center">
@@ -155,7 +153,7 @@ const BrandDetails = () => {
           No phones found for {brand}
         </p>
       ) : (
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {sortedPhones.map((phone) => (
             <div
               key={phone.model}
@@ -170,10 +168,10 @@ const BrandDetails = () => {
                 />
               </div>
               <div className="p-4 text-center">
-                <h2 className="text-2xl font-bold mb-2 text-gray-800 dark:text-white">
+                <h2 className="text-xl font-bold mb-2 text-gray-800 dark:text-white">
                   {phone.model}
                 </h2>
-                <p className="text-gray-600 text-xl dark:text-gray-300">
+                <p className="text-gray-600 text-lg dark:text-gray-300">
                   Price: {phone.price}
                 </p>
                 <div className="mt-4 flex justify-center">
@@ -185,9 +183,9 @@ const BrandDetails = () => {
                   </button>
                   <button
                     onClick={() => handleNavigation(phone)}
-                    className="bg-white text-black p-2 rounded-md  border-2 font-semibold transition-colors duration-300"
+                    className="bg-white text-black p-2 rounded-md border hover:bg-gray-200 hover:text-gray-800 border-black transition-colors duration-300"
                   >
-                    View Product{" "}
+                    View Product
                   </button>
                 </div>
               </div>
