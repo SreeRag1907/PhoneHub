@@ -6,6 +6,7 @@ import { useSelector } from "react-redux";
 const CartButton = () => {
   const { carts } = useSelector((state) => state.allCart);
 
+  //Added a cart button as a component
   return (
     <Link to="/cart" className="text-black relative group dark:text-white">
       <div className="absolute inset-0 ml-5 bg-black rounded-full shadow-lg transform translate-x-1 translate-y-1 transition-transform duration-100 ease-in-out dark:bg-white"></div>
