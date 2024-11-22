@@ -1,6 +1,7 @@
 import React from "react";
 import { FaShippingFast, FaRegCheckCircle, FaLock, FaHeadset } from "react-icons/fa";
 
+//Details of the site added here
 export default function Details() {
   return (
     <>
