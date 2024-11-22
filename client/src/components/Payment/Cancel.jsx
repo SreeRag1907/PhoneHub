@@ -5,6 +5,7 @@ import { useNavigate } from "react-router-dom";
 const PaymentFailure = () => {
   const navigate = useNavigate();
 
+  //After payment fails it goes to the home page......
   const handleGoBack = () => {
     navigate("/");
   };
